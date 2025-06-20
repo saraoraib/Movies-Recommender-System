@@ -76,14 +76,12 @@ def main():
     st.markdown("> *“Cinema is a mirror by which we often see ourselves.”* – Alejandro González Iñárritu")
     st.markdown("---")
 
-    
     st.sidebar.markdown('<div class="about-header">👩‍💻 About Me</div>', unsafe_allow_html=True)
     st.sidebar.write("""
         Sara Oraib, strong passion for data-driven problem solving.  
         My expertise lies in data analysis, machine learning, deep learning, and natural language processing (NLP).  
         I enjoy turning raw data into actionable insights and building intelligent systems that learn and adapt.
     """)
-
 
     st.sidebar.markdown('<div class="about-header">📱 Connect With Me</div>', unsafe_allow_html=True)
     st.sidebar.markdown("""
@@ -92,7 +90,6 @@ def main():
     [![Facebook](https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/saraoraib6)
     """)
 
-    
     movies = pickle.load(open('artificats/movie_list.pkl', 'rb'))
     similarity = pickle.load(open('artificats/similarity.pkl', 'rb'))
 
@@ -105,7 +102,7 @@ def main():
             st.subheader("✨ Recommended Movies")
             cols = st.columns(len(names))
             for col, name, poster in zip(cols, names, posters):
-                col.image(poster, use_column_width=True)
+                col.image(poster, use_container_width=True)
                 col.caption(name)
         else:
             st.warning("No recommendations found. Please try a different movie.")
