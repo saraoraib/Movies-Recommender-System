@@ -19,3 +19,5 @@ Shows movie posters:fetches posters from The Movie Database (TMDb) API to make r
 
 Interactive app: The whole system runs in a clean, easy-to-use web app built with Streamlit.
 
+## Try it:
+https://movie-recommender-system-fegyd4mcb4u9sgc9yz4trz.streamlit.app/
