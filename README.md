@@ -1,4 +1,5 @@
-# Movie Recommender System 🎬
+![Image](https://github.com/user-attachments/assets/498f818b-2103-46f1-8d63-7738f5baad27)
+# 🎬Movie Recommender System
 A content-based movie recommendation system designed to suggest movies similar to a user’s choice by analyzing multiple facets of movie data, including plot overviews, genres, keywords, cast, and crew. This system leverages natural language processing techniques, vectorization, and cosine similarity to find meaningful connections between movies.
 
 ## How it works
